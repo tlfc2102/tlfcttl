@@ -1,0 +1,23 @@
+h3{font-family:Times New Roman, Arial}
+.numbers {text-align:right; background-color:lightyellow}
+.numbers1 {text-align:right; background-color:pink }
+      
+      
+@media print{
+    header, input[type='reset'], input[type='submit'],input[type='button'] {display:none;}
+}
+
+table{
+    width: 100%;
+    font-size: 2rem;
+    border-collapse: collapse;
+}
+.table1, .table1 th, .table1 td{
+    border: 2px solid purple;
+}
+
+.cart-title{
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: antiquewhite;
+}

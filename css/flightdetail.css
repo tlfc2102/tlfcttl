@@ -1,0 +1,90 @@
+/* Arrivals */
+#Arrivals{
+    /*
+    float: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    */
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    font-size: 2rem;
+}
+#Arrivals table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#Arrivals table,#Arrivals tr th,#Arrivals tr td{
+    border: 0px solid black;
+    padding: 10px;
+}
+
+#Arrivals caption{
+    font-size: 5rem;
+    padding: 5px;
+    color: rgb(20, 145, 145);
+    font-family: 'Papyrus', "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#Arrivals tfoot{
+    align-items: center;
+    text-align: center;
+}
+#Arrivals thead tr:first-of-type{
+    background-color: #69efad;
+    color: white;
+}
+#Arrivals tbody tr:nth-of-type(odd){
+    background-color: lightblue;
+}
+#Arrivals tbody tr:nth-of-type(even){
+    background-color: whitesmoke;
+}
+#Arrivals tfoot tr{
+    background-color: #9fffdf;
+}
+
+/* Fare */
+#Fare{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Fare table{
+    margin: 2rem auto;
+    width: 80%;
+}
+
+#Fare thead{
+    background-color: #311a91;
+    color: white;
+}
+
+#Fare table, #Fare tr th, #Fare tr td{
+    padding: 10px;
+}
+
+#Fare tbody tr{
+    background-color: azure;
+}
+
+/* Transition Styles */
+#Arrivals tbody tr:hover td{
+    cursor:pointer;
+    color: #b71c1c;
+    padding: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    transform: scale(1.2,1.2) ;
+  }
+
+.imageMap{
+    margin-left: auto;
+    margin-right: auto;
+}

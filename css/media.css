@@ -1,0 +1,134 @@
+@media(max-width: 1850px){
+  .location-detail{
+    align-items: center;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: #fff;
+      z-index: 10000;
+      width: 35rem;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .header .navbar.active {
+      left: 0;
+      overflow: auto;
+      -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+              box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    .header .navbar a,.dropdown > .dropbtn {
+      margin: 1rem 0;
+      font-size: 2.8rem;
+      
+      
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
+    .dropdown .dropbtn .dropdown-content >a{
+      font-size: 2.8rem;
+    }
+    
+  
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  
+
+
+
+
+  /* @media (max-width:768px){
+
+    #menu-bar{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; right:0; left: 0;
+      background: #333;
+      border-top: .1rem solid rgba(255,255,255,.2);
+      padding:1rem 2rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      display: block;
+      border-radius: .5rem;
+      padding:1.5rem;
+      margin:1.5rem 0;    
+      background:#222;
+    }
+    .input-inline{
+      display: block;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+  
+    html{
+      font-size: 50%;
+    }
+  
+    .heading span{
+      font-size: 2.5rem;
+    }
+  
+    .contact .row form .inputBox input{
+      width:100%;
+    }
+  
+  } */
+  
