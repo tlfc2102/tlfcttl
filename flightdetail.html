@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woohoo - Flight Detail</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <!-- icon link -->
+    <link rel="icon" type="image/x-icon" href="images/bg/favicon.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/flightdetail.css">
+</head>
+<body class="bg">
+    
+<!-- header section starts  -->
+
+<header class="header subpage-header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-paper-plane"></i> Woohoo~ </a>
+    
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+       
+        <div class="dropdown">
+            <button class="dropbtn">home
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html#about">about</a>
+                <a href="index.html#category">promotion</a>
+                <a href="index.html#destination">packages</a>
+                <a href="index.html#reviews">review</a>
+                <a href="index.html#services">services</a>
+                <a href="index.html#subscribe">subscribe</a>
+            </div>
+          </div> 
+        <a href="about.html">about</a>
+        <div class="dropdown">
+            <button class="dropbtn">Packages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="flightdetail.html">Flight Details</a>
+              <a href="promotion.html">promotion</a>
+              <a href="location1.html">mumbai, india</a>
+              <a href="location2.html">hawaii, US state</a>
+              <a href="location3.html">sydney, australia</a>
+              <a href="location4.html">paris, france</a>
+              <a href="location5.html">tokyo, japan</a>
+              <a href="location6.html">cairo, egypt</a>
+            </div>
+          </div> 
+        <a href="review.html">reviews</a>
+        <a href="blog.html">blogs</a>
+    </nav>
+
+    <div class="nav-icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="book.html" class="fas fa-shopping-cart"></a>
+        <a href="account.html"><div class="fas fa-user"></div></a>
+        <img src="images/bg/musicplay.png" alt="musicplay" id="icon" title="Background Music" style="width: 30px;">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="fa fa-music-slash"></a>
+    </div>
+
+        <audio src="music/background_music.mp3" type="audio/mp3" id="mySong" autoplay></audio>
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+<!-- search form ends -->
+
+<div class="bodycontent">
+    <h1 style="margin-top: 100px;">Flight Details</h1>
+    <img src="images/img.jpg" usemap="#image-map" class="imageMap">
+        <map name="image-map">
+            <area target="" alt="FlightImgMap" title="FlightImgMap" href="package.html" coords="937,127,1199,70,1234,91,1215,119,1173,135,1171,147,1154,143,1125,149,1122,170,1091,179,1033,179,1019,192,1018,172,985,183,970,197,957,184,840,214,727,211,720,204,737,197,701,192,751,190,720,131,733,126,813,167,879,142,803,121,825,115,905,124" shape="poly">
+            <area target="" alt="HotelImgMap" title="HotelImgMap" href="book.html" coords="204,362,267,364,268,453,284,470,323,473,325,610,343,609,338,540,408,541,406,586,424,610,465,613,473,648,473,739,458,751,435,775,420,756,327,756,316,775,298,758,268,731,196,729,183,747,167,734,141,722,140,633,122,591,140,561,140,502,144,474,165,467,205,467" shape="poly">
+            <area target="" alt="CarRentImgMap" title="CarRentImgMap" href="book.html" coords="583,542,628,535,677,504,788,472,803,442,907,440,925,478,1005,502,1086,548,1209,578,1248,614,1246,659,1212,699,1185,700,1154,731,1119,734,1087,718,1072,699,731,702,700,729,656,731,629,709,617,695,601,697,594,684,566,656,558,624,572,560" shape="poly">
+        </map>
+    <div id="Arrivals">
+        <table>
+            <caption>Arrivals</caption>
+            <thead>
+                <tr>
+                    <th>TIME</th>
+                    <th>FLIGHT</th>
+                    <th>DESTINATION</th>
+                    <th>GATE</th>
+                    <th>TYPE OF FLIGHT</th>
+                    <th>REMARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:30</td>
+                    <td>AS365</td>
+                    <td>Sydney</td>
+                    <td>A17</td>
+                    <td>AIR ASIA</td>
+                    <td>ON TIME</td>
+                </tr>
+                <tr>
+                    <td>08:30</td>
+                    <td>AS370</td>
+                    <td>Mumbai</td>
+                    <td>C08</td>
+                    <td>AIR ASIA</td>
+                    <td>ON TIME</td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>MH017</td>
+                    <td>Paris</td>
+                    <td>A02</td>
+                    <td>Malaysia Airlines</td>
+                    <td>ON TIME</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>MH370</td>
+                    <td>Tokyo</td>
+                    <td>A17</td>
+                    <td>Malaysia Airlines</td>
+                    <td>ON TIME</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>AS415</td>
+                    <td>Egypt</td>
+                    <td>A17</td>
+                    <td>AIR ASIA</td>
+                    <td>ON TIME</td>
+                </tr>
+                <tr>
+                    <td>02:00</td>
+                    <td>AS415</td>
+                    <td>Hawaii</td>
+                    <td>A17</td>
+                    <td>AIR ASIA</td>
+                    <td>ON TIME</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Today Scheduled</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div id="Fare">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Domestic Destinations (Packages)</th>
+                </tr>
+                <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Fare Starting At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="7">Malaysia</td>
+                </tr>
+                <tr>
+                    <td>Sydney</td>
+                    <td>RM 6,799</td>
+                </tr>
+                <tr>
+                    <td>Mumbai</td>
+                    <td>RM 2,399</td>
+
+                </tr>
+                <tr>
+                    <td>Paris</td>
+                    <td>RM 3,399</td>
+                </tr>
+                <tr>
+                    <td>Tokyo</td>
+                    <td>RM 2,699</td>
+                </tr>
+                <tr>
+                    <td>Egypt</td>
+                    <td>RM 7,199</td>
+                </tr>
+                <tr>
+                    <td>Hawaii</td>
+                    <td>RM 2,499</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#about">about</a>
+            <a href="index.html#category">promotion</a>
+            <a href="index.html#destination">packages</a>
+            <a href="index.html#reviews">review</a>
+            <a href="index.html#services">services</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="account.html">my account</a>
+            <a href="contact.html">ask questions</a>
+            <a href="faq.html">FAQ</a>
+            <a href="review.html">make review</a>
+            <a href="book.html">Make Booking</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:011-55512188"> <i class="fas fa-phone"></i> 011-55512188 </a>
+            <a href="mailto: woohootravel.my@gmail.com"> <i class="fas fa-envelope"></i> woohootravel.my@gmail.com</a>
+            <a href="https://www.google.com/maps/d/edit?mid=15R9khJb6OZb95HdcSM1KYOgk4fKl1_Y&usp=sharing"> <i class="fas fa-map"></i> 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/Woohoo-Travel-107071058776408"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/TravelWoohoo"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/woohoo_travel.my/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://github.com/"> <i class="fab fa-github"></i> github </a>
+            <a href="tel:011-55512188"> <i class="fas fa-phone"></i> Phone Call </a>
+            <a href="mailto: woohootravel.my@gmail.com"> <i class="fas fa-envelope"></i> Email </a>
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>Woohoo Sdn. Bhd.</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- index js file link  -->
+<script src="js/script.js"></script>
+
+    
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){      
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "images/bg/musicplay.png";
+        }
+        else{
+            mySong.pause();
+            icon.src = "images/bg/musicpause.png";
+        }
+
+    }
+</script>
+</body>
+</html>

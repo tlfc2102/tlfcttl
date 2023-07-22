@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woohoo - Booking</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- icon link -->
+    <link rel="icon" type="image/x-icon" href="images/bg/favicon.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/package.css">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header subpage-header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-paper-plane"></i> Woohoo~ </a>
+    
+
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+       
+        <div class="dropdown">
+            <button class="dropbtn">home
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html#about">about</a>
+                <a href="index.html#category">promotion</a>
+                <a href="index.html#destination">packages</a>
+                <a href="index.html#reviews">review</a>
+                <a href="index.html#services">services</a>
+                <a href="index.html#subscribe">subscribe</a>
+            </div>
+          </div> 
+        <a href="about.html">about</a>
+        <div class="dropdown">
+            <button class="dropbtn">Packages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="flightdetail.html">Flight Details</a>
+              <a href="promotion.html">promotion</a>
+              <a href="location1.html">mumbai, india</a>
+              <a href="location2.html">hawaii, US state</a>
+              <a href="location3.html">sydney, australia</a>
+              <a href="location4.html">paris, france</a>
+              <a href="location5.html">tokyo, japan</a>
+              <a href="location6.html">cairo, egypt</a>
+            </div>
+          </div> 
+        <a href="contact.html">contact us</a>
+        <a href="blog.html">blogs</a>
+    </nav>
+
+    <div class="nav-icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="book.html" class="fas fa-shopping-cart"></a>
+        <a href="account.html"><div class="fas fa-user"></div></a>
+        <img src="images/bg/musicplay.png" alt="musicplay" id="icon" title="Background Music" style="width: 30px;">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="fa fa-music-slash"></a>
+    </div>
+
+        <audio src="music/background_music.mp3" type="audio/mp3" id="mySong" autoplay></audio>
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+<!-- search form ends -->
+
+<div class="bodycontent">
+    <!-- book section starts  -->
+
+    <section class="book" id="book">
+        <h1>Book Your Ticket Now!</h1>
+        
+        <div class="row">
+
+            <div class="image">
+            
+                <img src="images/package-flight.png" alt="">
+            </div>
+
+            <form action="/payment1.html">
+                <h1>Start Booking !</h1>
+                <div class="inputBox">
+                    <h3>Name</h3>
+                    <input class="bname" type="text" placeholder="Enter your name" id="bname" required>
+                    <h3>Telephone No.</h3>
+                    <input class="btel" type="text" placeholder="Enter your phone number" id="btel" required>
+                    <h3>From</h3>
+                    <input list="flocations" name="flocation" id="flocation" class="flocation" placeholder="Your location" required>
+                    <datalist id="flocations">
+                        <option value="Bario Airport">
+                        <option value="Bintulu Airport">
+                        <option value="Kota Kinabalu International Airport">
+                        <option value="Kuala Lumpur International Airport">
+                        <option value="Kuching International Airport">
+                        <option value="Langkawi International Airport">
+                        <option value="Lahad Datu Airport">
+                        <option value="Limbang Airport">
+                        <option value="Labuan Airport">
+                        <option value="Malacca Airport">
+                        <option value="Malacca International Airport">
+                        <option value="Mulu Airport">
+                        <option value="Miri Airport">
+                        <option value="Malacca">   
+                        <option value="Penang International Airport">
+                        <option value="Sandakan Airport">
+                        <option value="Senai International Airport">
+                        <option value="Sultan Abdul Aziz Shah Airport">
+                        <option value="Sultan Azlan Shah Airport">
+                        <option value="Sultan Abdul Halim Airport">
+                        <option value="Sultan Ismail Petra Airport">
+                        <option value="Sultan Mahmud Airport">
+                        <option value="Sultan Ahmad Shah Airport"> 
+                        <option value="Sibu Airport">
+                        <option value="Tawau Airport">
+                    </datalist>
+                    <h3>Where To</h3>
+                    <input list="tlocations" name="tlocation" id="tlocation" class="tlocation" placeholder="Your destination" required>
+                    <datalist id="tlocations">
+                        <option value="Mumbai, India">
+                        <option value="Hawaii, US State">
+                        <option value="Sydney, Australia">
+                        <option value="Paris, France">
+                        <option value="Tokyo, Japan">
+                        <option value="Cairo, Egypt">
+                    </datalist>
+                    <h3>Hotel</h3>
+                    <input list="thotels" name="thotel" id="thotel" class="thotel" placeholder="Hotel to book">
+                    <datalist id="thotels">
+                        <option value="Trident Bandra Kurla, Mumbai, India">
+                        <option value="The Orchid Hotel Mumbai Vile Parle, Mumbai, India">
+                        <option value="Trident Nariman Point, Mumbai, India">
+                        <option value="The Taj Mahal Tower Mumbai, Mumbai, India">
+                        <option value="Taj Santacruz, Mumbai, India">
+                        <option value="Grand Hyatt Mumbai Hotel And Residences, Mumbai, India">
+                        <option value="Courtyard Oahu North Shore, Hawaii, US State">
+                        <option value="The Laylow, Autograph Collection, Hawaii, US State">
+                        <option value="Moana Surfrider, A Westin Resort & Spa, Waikiki Beach, Hawaii, US State">
+                        <option value="The Ritz-Carlton Residences, Waikiki Beach, Hawaii, US State">
+                        <option value="The Royal Hawaiian, A Luxury Collection Resort, Waikiki, Hawaii, US State">
+                        <option value="Sheraton Waikiki, Hawaii, US State">
+                        <option value="Shangri-La Sydney, Sydney, Australia">
+                        <option value="Ibis Budget Sydney Airport, Sydney, Australia"">
+                        <option value="The Grace Hotel, Sydney, Australia"">
+                        <option value="Hyatt Regency Sydney, Sydney, Australia"">
+                        <option value="Travelodge Hotel Sydney Airport, Sydney, Australia"">
+                        <option value="Great Southern Hotel Sydney, Sydney, Australia"">
+                        <option value="B&B HOTEL Paris 17 Batignolles, Paris, France">
+                        <option value="Pullman Paris Tour Eiffel, Paris, France">
+                        <option value="CitizenM Paris Gare De Lyon, Paris, France">
+                        <option value="Ibis Budget Paris La Villette 19ème, Paris, France">
+                        <option value="Holiday Inn Paris Gare De L'Est, An IHG Hotel, Paris, France">
+                        <option value="MEININGER Hotel Paris Porte De Vincennes, Paris, France">
+                        <option value="Hotel Sunroute Plaza Shinjuku, Tokyo, Japan">
+                        <option value="Shinagawa Prince Hotel, Tokyo, Japan">
+                        <option value="Shinjuku Prince Hotel, Tokyo, Japan">
+                        <option value="The Square Hotel GINZA, Tokyo, Japan">
+                        <option value="Mitsui Garden Hotel Roppongi Tokyo Premier, Tokyo, Japan">
+                        <option value="Ours Inn Hankyu, Tokyo, Japan">
+                        <option value="Novotel Cairo Airport, Cairo, Egypt">
+                        <option value="Pyramisa Suites Hotel Cairo, Cairo, Egypt">
+                        <option value="Le Meridien Cairo Airport, Cairo, Egypt">
+                        <option value="Steigenberger Hotel El Tahrir Cairo, Cairo, Egypt">
+                        <option value="Sonesta Hotel Tower & Casino Cairo, Cairo, Egypt">
+                        <option value="Ramses Hilton Hotel & Casino, Cairo, Egypt">
+                    </datalist>
+                    
+                    <h3>Car Rent</h3>
+                    <input list="tcars" name="tcar" id="tcar" class="tcar" placeholder="Type of Car Rent">
+                    <datalist id="tcars">
+                        <option value="Recreational Vechicle">
+                        <option value="Jeep">
+                        <option value="Fortuner">
+                        <option value="Lexus RX">
+                    </datalist>
+                </div>
+
+                <div class="input-inline">
+                    <div class="inputBox input-1">
+                        <h3>guests</h3>
+                        <input type="number" placeholder="Num of guest" min="1" required>
+                    </div>
+                    <div class="inputBox input-1">
+                        <h3>arrivals</h3>
+                        <input type="date" required>
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+
+        </div>
+    </section>
+
+</div>
+    
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#about">about</a>
+            <a href="index.html#category">promotion</a>
+            <a href="index.html#destination">packages</a>
+            <a href="index.html#reviews">review</a>
+            <a href="index.html#services">services</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="account.html">my account</a>
+            <a href="contact.html">ask questions</a>
+            <a href="faq.html">FAQ</a>
+            <a href="review.html">make review</a>
+            <a href="book.html">Make Booking</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:011-55512188"> <i class="fas fa-phone"></i> 011-55512188 </a>
+            <a href="mailto: woohootravel.my@gmail.com"> <i class="fas fa-envelope"></i> woohootravel.my@gmail.com</a>
+            <a href="https://www.google.com/maps/d/edit?mid=15R9khJb6OZb95HdcSM1KYOgk4fKl1_Y&usp=sharing"> <i class="fas fa-map"></i> 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/Woohoo-Travel-107071058776408"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/TravelWoohoo"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/woohoo_travel.my/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="https://github.com/"> <i class="fab fa-github"></i> github </a>
+            <a href="tel:011-55512188"> <i class="fas fa-phone"></i> Phone Call </a>
+            <a href="mailto: woohootravel.my@gmail.com"> <i class="fas fa-envelope"></i> Email </a>
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>Woohoo Sdn. Bhd.</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){      
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "images/bg/musicplay.png";
+        }
+        else{
+            mySong.pause();
+            icon.src = "images/bg/musicpause.png";
+        }
+
+    }
+</script>
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- index js file link  -->
+<script src="js/products.js"></script>
+<!-- <script src="../Products page/products.js"></script> -->
+</body>
+</html>
